@@ -1,20 +1,20 @@
 spring:
   cloud:
-   config:
-    server:
-     git:
-      uri: https://github.com/Dhruv1170/config-server
-   kafka:
-     consumer:
-       auto-offset-reset: earliest
-       bootstrap-servers: localhost:9092
-       group-id: test-group
-       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-     producer:
-       bootstrap-servers: localhost:9092
-       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-     topics: kafka0
+    config:
+      server:
+        git:
+          uri: https://github.com/Dhruv1170/config-server
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      bootstrap-servers: localhost:9092
+      group-id: test-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    topics: kafka0
 server:
   port: 8081
